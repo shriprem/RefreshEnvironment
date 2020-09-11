@@ -8,5 +8,5 @@ int main()
    DWORD retVal;
    ::SendMessageTimeout(HWND_BROADCAST, WM_SETTINGCHANGE, NULL, (LPARAM)L"Environment",
       SMTO_ABORTIFHUNG, 5000, (PDWORD_PTR)(&retVal));
-   return 1;
+   return 0;
 }
